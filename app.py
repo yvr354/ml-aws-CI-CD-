@@ -38,9 +38,9 @@ def predict_datapoints():
         print("Before Prediction")
 
         predict_pipeline= predictpipline()
-        print("Mid Prediction")
+        #print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
-        print("after Prediction")
+        #print("after Prediction")
         return render_template('home.html',results=results[0]) 
     #here all are list thats why 0 and we need to place this in home .html line 108
     
