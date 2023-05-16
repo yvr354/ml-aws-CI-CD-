@@ -42,8 +42,7 @@ def predict_datapoints():
         results=predict_pipeline.predict(pred_df)
         #print("after Prediction")
         return render_template('home.html',results=results[0]) 
-    #here all are list thats why 0 and we need to place this in home .html line 108
-    
+    #here all are list thats why 0 and we need to place this in home .html line 108   
 
 if __name__=="__main__":
     app.run(host="0.0.0.0",port=8080)      
